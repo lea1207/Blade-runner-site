@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+/* Header navigation */
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    height: 100px;
+    background: linear-gradient(90deg, #e91e63, #00bcd4);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.main-nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.main-nav .active {
+    color: #ff9800;
+    text-shadow: 0 0 10px #ff9800;
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1em;
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+/* Sections */
+section {
+    margin: 2em auto;
+    padding: 1em 2em;
+    max-width: 90%;
+}
+
+/* Character articles */
+article {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Zoom and glow effect on hover */
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00bcd4, 0 0 30px #e91e63;
+}
+
+/* Character article titles */
+article h3 {
+    font-size: 1.8em;
+    color: #e91e63;
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 10px #e91e63, 0 0 20px #e91e63;
+}
+
+/* Paragraph text */
+article p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Lists */
+ul {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+ul li strong {
+    color: #e91e63;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.main-footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}

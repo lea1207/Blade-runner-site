@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronologie - Blade Runner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timeline3/timeline3/css/timeline.css">
+    <link rel="stylesheet" href="style-chronologie.css">
+    <script src="timeline3/timeline3/js/timeline.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="synopsis.html">Synopsis</a></li>
+                <li><a href="personnages.html">Personnages</a></li>
+                <li><a href="analyse.html">Analyse</a></li>
+                <li><a href="chronologie.html" class="active">Chronologie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Chronologie de l'Univers Blade Runner</h1>
+        <!-- Conteneur pour la frise chronologique -->
+        <div id="timeline-embed" style="width: 100%; height: 600px;"></div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Projet Blade Runner. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        var timelineData = {
+            "title": {
+                "text": {
+                    "headline": "Chronologie de Blade Runner",
+                    "text": "Explorez les événements clés de l'univers Blade Runner, des Nexus-6 aux réplicants Nexus-9."
+                }
+            },
+            "events": [
+                {
+                    "start_date": {
+                        "year": "2016"
+                    },
+                    "text": {
+                        "headline": "Création des Nexus-6",
+                        "text": "La société Tyrell Corporation, dirigée par Eldon Tyrell, développe les réplicants Nexus-6, des androïdes biologiques presque indiscernables des humains. Leur durée de vie est limitée à quatre ans."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2019"
+                    },
+                    "text": {
+                        "headline": "Rébellion des Nexus-6",
+                        "text": "Plusieurs réplicants Nexus-6 se révoltent contre leurs créateurs et s'enfuient vers la Terre, cherchant à prolonger leur vie limitée."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2019"
+                    },
+                    "text": {
+                        "headline": "L'arrivée de Rick Deckard",
+                        "text": "Rick Deckard, un Blade Runner à la retraite, est recruté pour éliminer les fugitifs."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2019"
+                    },
+                    "text": {
+                        "headline": "La rencontre avec Rachael",
+                        "text": "Deckard rencontre Rachael, une réplicante avancée créée par Tyrell, qui ignore qu'elle est une androïde. Elle possède des souvenirs implantés pour renforcer son humanité."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2019"
+                    },
+                    "text": {
+                        "headline": "Confrontation avec Roy Batty",
+                        "text": "Deckard affronte Roy Batty, le leader des réplicants. Roy sauve Deckard avant de mourir d'une manière poignante, acceptant sa mortalité."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2020"
+                    },
+                    "text": {
+                        "headline": "Interdiction des Nexus-8",
+                        "text": "Après les incidents liés aux Nexus-6, la production des réplicants est interdite et la Tyrell Corporation s'effondre."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2022"
+                    },
+                    "text": {
+                        "headline": "Le Blackout mondial",
+                        "text": "Un événement majeur connu sous le nom de 'Blackout' détruit les bases de données numériques, plongeant la société dans le chaos."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2025"
+                    },
+                    "text": {
+                        "headline": "Ascension de la Wallace Corporation",
+                        "text": "Niander Wallace acquiert les restes de la Tyrell Corporation et développe les Nexus-9, des réplicants plus obéissants et stables."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2049"
+                    },
+                    "text": {
+                        "headline": "Découverte de K",
+                        "text": "K, un Blade Runner réplicant Nexus-9, découvre un secret qui pourrait bouleverser les fondements de la société humaine et réplicante."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2049"
+                    },
+                    "text": {
+                        "headline": "Rencontre avec Deckard",
+                        "text": "K retrouve Deckard, vivant en exil, et découvre des vérités sur un enfant né de réplicants."
+                    }
+                },
+                {
+                    "start_date": {
+                        "year": "2049"
+                    },
+                    "text": {
+                        "headline": "Le sacrifice de K",
+                        "text": "K aide Deckard à retrouver son enfant, sacrifiant sa propre vie pour permettre leur réunion."
+                    }
+                }
+            ]
+        };
+
+        // Initialisation de la frise chronologique avec Timeline.js
+        var timeline = new TL.Timeline('timeline-embed', timelineData);
+    </script>
+</body>
+</html>

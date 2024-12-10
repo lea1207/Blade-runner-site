@@ -1,0 +1,121 @@
+/* Global styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    justify-content: center; /* Centre la navigation */
+    align-items: center;
+    padding: 1em 2em;
+    height: 100px;
+    background: linear-gradient(90deg, #e91e63, #00bcd4); /* Dégradé rose vers bleu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation styles */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centre les liens dans la navigation */
+    gap: 2em; /* Espacement entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff; /* Couleur par défaut des liens */
+    font-size: 1.2em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ff9800; /* Orange au survol */
+    text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800;
+}
+
+.main-nav .active {
+    color: #ffffff; /* Couleur blanche par défaut de l'onglet actif */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+.main-nav .active:hover {
+    color: #ff9800; /* Orange au survol */
+    text-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800;
+}
+
+/* Main content styles */
+main {
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00bcd4; /* Bleu clair */
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+    margin-bottom: 1em;
+}
+
+/* Timeline container styles */
+#timeline-embed {
+    max-width: 100%;
+    height: 600px; /* Augmentation de la hauteur */
+    margin: 2em auto;
+    background: rgba(10, 10, 10, 0.9); /* Fond semi-transparent */
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00bcd4, 0 0 30px #e91e63; /* Ombre colorée */
+}
+
+/* Timeline text customization */
+#timeline-embed .tl-slide-content {
+    font-size: 1.1em; /* Taille ajustée pour une meilleure lisibilité */
+    line-height: 1.4;
+    color: #ffffff; /* Texte blanc pour harmoniser */
+}
+
+/* Timeline title customization */
+#timeline-embed .tl-slide-content h3 {
+    font-size: 1.3em; /* Taille du titre ajustée */
+    color: #ff9800; /* Orange pour les titres */
+    text-shadow: 0 0 10px #ff9800, 0 0 20px #00bcd4;
+    margin-bottom: 0.5em;
+}
+
+/* Timeline date customization */
+#timeline-embed .tl-date {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Timeline background */
+#timeline-embed .tl-timeline {
+    background-color: rgba(20, 20, 20, 0.8); /* Fond sombre pour la frise */
+}
+
+/* Footer styles */
+.main-footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #111;
+    color: #888;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.main-footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
